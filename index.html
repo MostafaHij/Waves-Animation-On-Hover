@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practice</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hover On Buttons</h1>
+        <div>
+            <button id="b1">Button 1</button>
+            <button id="b2">Button 2</button>
+            <button id="b3">Button 3</button>
+        </div>
+    </div>
+
+    <svg>
+        <defs>
+            <filter id="wave">
+                <feTurbulence type='fractalNoise' baseFrequency='0.0001 0.0001' numOctaves='1' result='wrap' />
+                <feDisplacementMap xChannelSelector='R' yChannelSelector='G' scale='30' in="SourceGraphic"
+                    in2="wrapOffset" />
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
